@@ -18,10 +18,61 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.home_container {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Exemplo de grade flexível para layout responsivo */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada coluna dentro da grade flexível */
+.column {
+  width: 100%;
+  /* Ocupa toda a largura em dispositivos pequenos */
+}
+
+/* No caso de telas maiores, ajuste a largura das colunas conforme necessário */
+
+
+.modal {
+  background-color: #4a5568;
+  max-width: 25vh;
+  max-height: 100vh;
+  /* Cor do header */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-portal {
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: auto;
+  transform: none;
 }
