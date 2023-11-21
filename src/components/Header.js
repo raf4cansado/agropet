@@ -25,10 +25,8 @@ const Header = () => {
 
             {/* Modal */}
 
-            <div className={`fixed top-0 left-0  bg-gray-800 text-white p-4`}>
-                <button onClick={toggleSidebar} className="text-2xl">
-                    {isSidebarOpen ? <FiX /> : <FiMenu />}
-                </button>
+            <div className={` top-0 left-0  bg-gray-800 text-white p-2`}>
+        
 
                 {isSidebarOpen && (
                     <nav className="mt-4">
